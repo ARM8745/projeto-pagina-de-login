@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./LoginPage.css";
-import simbolo from "./simbolo.png";
-import lg1 from "./lg1.png";
-import lg2 from "./lg2.png";
-import lg3 from "./lg3.png";
+import simbolo from "./assets/simbolo.png";
+import lg1 from "./assets/lg1.png";
+import lg2 from "./assets/lg2.png";
+import lg3 from "./assets/lg3.png";
 
 export default function LoginPage() {
   const [loading, setLoading] = useState(false);
@@ -68,7 +68,7 @@ export default function LoginPage() {
                 onChange={e => setSenha(e.target.value)}
                 required
               />
-                <img src={require('./Frame.png')} alt="Frame" className="login-eye" />
+                <img src={require('./assets/Frame.png')} alt="Frame" className="login-eye" />
             </div>
             <button type="submit" className="login-btn" disabled={loading}>
               FAZER LOGIN
